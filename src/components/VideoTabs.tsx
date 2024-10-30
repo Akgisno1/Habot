@@ -4,16 +4,16 @@ const Tabs = () => {
   const [activeTab, setActiveTab] = useState("buyer");
 
   return (
-    <div className="w-[45%] max-sm:w-full mx-auto">
+    <div className="w-[45%] max-sm:w-full  max-sm:h-[300px]">
       <ul
         className="flex justify-center font-semibold text-gray-700 dark:text-gray-400 text-3xl"
         id="tabs"
         role="tablist"
       >
-        <li className="w-1/2 text-center" role="presentation">
+        <li className=" text-center" role="presentation">
           <button
             onClick={() => setActiveTab("buyer")}
-            className={`inline-block w-full p-4 border-b-4 ${
+            className={`inline-block w-full p-4 border-b-4 max-sm:mr-4 ${
               activeTab === "buyer"
                 ? "text-amber-600 border-amber-600"
                 : "border-transparent"
@@ -27,7 +27,7 @@ const Tabs = () => {
             Buyer
           </button>
         </li>
-        <li className="w-1/2 text-center" role="presentation">
+        <li className=" text-center" role="presentation">
           <button
             onClick={() => setActiveTab("supplier")}
             className={`inline-block w-full p-4 border-b-4 ${

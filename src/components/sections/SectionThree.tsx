@@ -2,9 +2,9 @@ import Tabs from "../VideoTabs";
 
 const SectionThree = () => {
   return (
-    <section className="mx-[12vh] rounded-sm py-[14vh] px-[6vh] bg-blue-900 text-white ">
-      <div className="flex flex-row max-md:flex-col w-full">
-        <div className="relative max-sm:w-full w-[55%]">
+    <div className="mx-[12vh] rounded-sm max-sm:p-0 max-sm:m-0 py-[14vh] px-[6vh] bg-blue-900 text-white ">
+      <div className="flex sm:flex-row flex-col w-full">
+        <div className="relative max-sm:w-full w-[55%] max-sm:p-12">
           <img
             src="video.png"
             alt="Video thumbnail"
@@ -29,7 +29,7 @@ const SectionThree = () => {
         </div>
         <Tabs />
       </div>
-    </section>
+    </div>
   );
 };
 

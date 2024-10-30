@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const SectionTwo = () => {
   return (
-    <section className="p-[12vh] text-left flex flex-row max-sm:flex-col w-full items-center justify-between">
+    <div className="p-[12vh] max-sm:p-12 text-left flex w-screen sm:flex-row flex-col  items-center justify-between">
       <div className="flex flex-col ">
         <h2 className="text-4xl font-bold">
           Ready to dive into <span className="text-blue-600">HABOT</span>?
@@ -13,12 +13,12 @@ const SectionTwo = () => {
           of like-minded individuals, unlock valuable resources, and take the
           first step towards realizing your entrepreneurial dreams.
         </p>
-        <button className="mt-4 px-6 py-2 bg-green-700 w-1/2 font-semibold text-white rounded-md flex flex-row items-center justify-center">
+        <button className="mt-4 px-6 py-2 max-sm:w-full bg-green-700 w-1/2 font-semibold text-white rounded-md flex flex-row items-center justify-center">
           Sign up Today!
           <FaArrowRight className="ml-6" />
         </button>
       </div>
-      <div className=" grid grid-cols-2  gap-4 text-xl text-zinc-800 ">
+      <div className=" grid grid-cols-2  gap-4 text-xl max-sm:text-lg max-sm:mt-12 text-zinc-800 ">
         <button className="px-8 py-3  border-1 hover:text-white hover:bg-amber-600 border-amber-600   rounded-md">
           Abu Dhabi
         </button>
@@ -38,7 +38,7 @@ const SectionTwo = () => {
           Umm Al Quwain
         </button>
       </div>
-    </section>
+    </div>
   );
 };
 

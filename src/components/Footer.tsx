@@ -7,9 +7,9 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-900 text-white py-10 relative mt-16 ">
-      <div className="max-w-6xl mx-auto flex flex-row border-y pb-6 border-gray-400 max-sm:flex-row items-center justify-between relative z-10">
-        <div className="flex flex-col items-center md:items-start">
+    <footer className="bg-blue-900 text-white py-10 max-sm:p-4 max-sm:mt-8 relative mt-16 max-sm:w-screen">
+      <div className="max-w-6xl mx-auto flex sm:flex-row border-y pb-6 border-gray-400 flex-col items-center max-sm:gap-8 justify-between relative z-10">
+        <div className="flex flex-col items-center md:items-start max-sm:hidden">
           <img src="navlogo.png" alt="HABOT logo" className="h-16 mb-2" />
           <span className="text-md font-bold ml-4">© R Singhania</span>
         </div>
@@ -46,7 +46,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-row gap-6 ">
+        <div className="flex flex-row gap-6 max-sm:mt-8">
           <a
             href="#"
             className="text-gray-100 rounded-full border-1 border-gray-100 p-2"

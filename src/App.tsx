@@ -10,7 +10,7 @@ import SectionTwo from "./components/sections/SectionTwo";
 
 function App() {
   return (
-    <div className="font-pop">
+    <main className="font-pop w-screen overflow-x-hidden">
       <Navbar />
       <SectionOne />
       <SectionTwo />
@@ -18,7 +18,7 @@ function App() {
       <SectionFour />
       <SectionFive />
       <Footer />
-    </div>
+    </main>
   );
 }
 export default App;
