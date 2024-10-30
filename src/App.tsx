@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import SectionFive from "./components/sections/SectionFive";
 import SectionFour from "./components/sections/SectionFour";
-import SectionOne from "./components/sections/sectionone";
+import SectionOne from "./components/sections/SectionOne";
 import SectionThree from "./components/sections/SectionThree";
 import SectionTwo from "./components/sections/SectionTwo";
 
