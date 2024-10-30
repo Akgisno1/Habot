@@ -1,19 +1,19 @@
-
+import Dropdown from "./NavbarDropdown";
 
 const Navbar = () => {
   return (
-    <header className="flex justify-between items-center p-4 bg-white shadow-md">
-            <div className="flex items-center">
-                <img src="https://placehold.co/50x50" alt="HABOT logo" className="mr-2"/>
-                <span className="text-xl font-bold">HABOT</span>
-            </div>
-            <nav className="flex items-center space-x-4">
-                <a href="#" className="text-gray-600">Find Suppliers</a>
-                <a href="#" className="text-gray-600">Find Service Tags <i className="fas fa-chevron-down"></i></a>
-                <button className="px-4 py-2 border border-green-500 text-green-500 rounded">Login / Sign Up</button>
-            </nav>
-        </header>
-  )
-}
+    <header className="flex justify-between items-center pl-10 pr-10 bg-white shadow-md">
+      <div className="flex items-center">
+        <img src="navlogo.png" alt="HABOT logo" className="h-16 " />
+      </div>
+      <nav className="flex items-center flex-row space-x-6 text-gray-600 ">
+        <Dropdown />
+        <button className="px-10 py-3 border-1 border-green-700 text-green-700 rounded-md hover:bg-green-500 hover:text-white transition-all font-bold">
+          Login / Sign Up
+        </button>
+      </nav>
+    </header>
+  );
+};
 
-export default Navbar
+export default Navbar;
